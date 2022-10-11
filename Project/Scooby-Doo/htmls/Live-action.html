@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+			<title>Live Action - Scooby-Doo</title>
+	    <link rel="shortcut icon" type="image/ico" href="../other-pics/favicon.ico">
+      <link rel="stylesheet" href="../css/live-action.css">
+<meta charset="utf-8">
+</head>
+  <header>
+    <div class="container">
+			<img src="../other-pics/siteLogo.png" alt="image" height="50px" class="logo">
+			<p class="who_">Scooby-Doo</p>
+            <nav>
+                <ul>
+									<li><a href="index.html">Home</a></li>
+                  <li><a href="facts.html">Facts</a></li>
+                  <li><a href="live-action.html" class="shown">Live Action</a></li>
+                  <li><a href="Scooby-doo.html">Scooby Doo</a></li>
+                </ul>
+            </nav>
+    </div>
+</header>
+<body>
+	<br>
+	<h3>Live Action</h3>
+		<p>
+		 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate ut pharetra sit amet. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Ac turpis egestas maecenas pharetra convallis posuere. In hac habitasse platea dictumst quisque sagittis purus sit amet. Parturient montes nascetur ridiculus mus mauris. Laoreet non curabitur gravida arcu ac tortor dignissim. Blandit aliquam etiam erat velit. Arcu bibendum at varius vel pharetra vel turpis nunc. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Sed blandit libero volutpat sed cras. Elit eget gravida cum sociis. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Integer quis auctor elit sed vulputate mi sit amet. Quam nulla porttitor massa id neque aliquam vestibulum. Eget mauris pharetra et ultrices neque ornare aenean. Interdum varius sit amet mattis vulputate enim. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Maecenas pharetra convallis posuere morbi leo urna molestie at. In cursus turpis massa tincidunt. Sapien pellentesque habitant morbi tristique senectus et. Morbi non arcu risus quis. Tincidunt arcu non sodales neque. Quisque sagittis purus sit amet volutpat. Donec et odio pellentesque diam. Laoreet sit amet cursus sit amet dictum sit.
+		</p>
+				<br>
+				<br>
+				<br>
+
+
+
+ 	<h4>Multiple Movies</h4>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate ut pharetra sit amet. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Ac turpis egestas maecenas pharetra convallis posuere. In hac habitasse platea dictumst quisque sagittis purus sit amet. Parturient montes nascetur ridiculus mus mauris. Laoreet non curabitur gravida arcu ac tortor dignissim. Blandit aliquam etiam erat velit. Arcu bibendum at varius vel pharetra vel turpis nunc. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Sed blandit libero volutpat sed cras. Elit eget gravida cum sociis. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Integer quis auctor elit sed vulputate mi sit amet. Quam nulla porttitor massa id neque aliquam vestibulum. Eget mauris pharetra et ultrices neque ornare aenean. Interdum varius sit amet mattis vulputate enim. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Maecenas pharetra convallis posuere morbi leo urna molestie at. In cursus turpis massa tincidunt. Sapien pellentesque habitant morbi tristique senectus et. Morbi non arcu risus quis. Tincidunt arcu non sodales neque. Quisque sagittis purus sit amet volutpat. Donec et odio pellentesque diam. Laoreet sit amet cursus sit amet dictum sit.
+		</p>
+		<br>
+		<br>
+		<br>
+
+
+		<center>
+			<div class="slideshow">
+					<h2 class="center">Pictures From The Moives</h2>
+						<div class="content display-container">
+							<img class="mySlides" src="../live-action/live-action1.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../live-action/live-action2.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../live-action/live-action3.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../live-action/live-action4.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../live-action/live-action5.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../live-action/live-action6.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../live-action/live-action7.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../live-action/live-action8.png" width="800px" alt="placeholder image">
+								<div class="nav-buttons">
+									<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+									<button class="button display-right" onclick="plusDivs(1)">&#10095;</button>
+								</div>
+						</div>
+			</div>
+		</center>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex-1].style.display = "block";
+		}
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}
+			x[myIndex-1].style.display = "block";
+			setTimeout(carousel, 4000); // Change image every 4 seconds
+		}
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿<!doctype HTML>
+<html>
+  <head>
+      <title>Home - Velma Dinkley</title>
+      <link rel="shortcut icon" type="image/ico" href="../other-pics/favicon.ico">
+        <link rel="stylesheet" href="../css/style.css">
+</head>
+  <header>
+    <div class="container">
+      <img src="../other-pics/siteLogo.png" alt="image" height="50px" class="logo">
+      <p class="who_">Velma Dinkley</p>
+            <nav>
+                <ul>
+                  <li><a href="index.html" class="shown">Home</a></li>
+                  <li><a href="facts.html">Facts</a></li>
+                  <li><a href="live-action.html">Live Action</a></li>
+                  <li><a href="Scooby-doo.html">Scooby Doo</a></li>
+                </ul>
+            </nav>
+    </div>
+  </header>
+<body>
+  <br>
+  <h1>Velma Dinkley</h1>
+  <br>
+  <center>
+    <img src="../Velma-pics/Velma.png" alt="Picture of Velma" height="400px">
+</center>
+    <br>
+    <br>
+    <br>
+    <h4>Early Life</h4>
+      <p>
+        Ut sem nulla pharetra diam sit. Vel turpis nunc eget lorem dolor sed viverra ipsum. Et odio pellentesque diam volutpat commodo sed. Interdum velit laoreet id donec ultrices tincidunt arcu. Posuere urna nec tincidunt praesent semper feugiat nibh. Sed viverra ipsum nunc aliquet bibendum enim. Sed pulvinar proin gravida hendrerit lectus a. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Orci a scelerisque purus semper eget duis at. Id cursus metus aliquam eleifend mi in nulla. Nam libero justo laoreet sit amet cursus sit amet dictum. Feugiat vivamus at augue eget arcu dictum varius duis at. Ultrices eros in cursus turpis. Lectus quam id leo in vitae turpis. Quisque id diam vel quam elementum pulvinar etiam.
+      </p>
+      <br>
+      <br>
+      <br>
+      <h4>Education</h4>
+      <p>
+          Rutrum quisque non tellus orci ac. Erat pellentesque adipiscing commodo elit at. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Erat  pellentesque adipiscing commodo elit at. Eget dolor morbi non arcu risus quis varius quam quisque. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Nibh sed pulvinar proin gravida hendrerit lectus a. Neque gravida in fermentum et sollicitudin. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Turpis massa tincidunt dui ut ornare lectus sit. Sed turpis tincidunt id aliquet risus feugiat in ante. Nisl condimentum id venenatis a condimentum vitae sapien. Sed velit dignissim sodales ut eu sem integer vitae. Arcu vitae elementum curabitur vitae nunc. Pellentesque elit eget gravida cum sociis natoque penatibus.
+        </p>
+<br>
+<br>
+<br>
+
+	<center>
+		<div class="slideshow">
+				<h2 class="center">Slideshow of Velma</h2>
+					<div class="content display-container">
+              <img class="mySlides" src="../Velma-pics/Velma1.png" width="800px" alt="placeholder image">
+	  					<img class="mySlides" src="../Velma-pics/Velma2.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../Velma-pics/Velma3.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../Velma-pics/Velma4.png" width="800px" alt="placeholder image">
+							<img class="mySlides" src="../Velma-pics/Velma5.png" width="800px" alt="placeholder image">
+							<div class="nav-buttons">
+  							<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+  							<button class="button display-right" onclick="plusDivs(1)">&#10095;</button>
+							</div>
+					</div>
+		</div>
+	</center>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+  	showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+  	var i;
+  	var x = document.getElementsByClassName("mySlides");
+  	if (n > x.length) {slideIndex = 1}
+  	if (n < 1) {slideIndex = x.length}
+  	for (i = 0; i < x.length; i++) {
+    	x[i].style.display = "none";
+  	}
+  	x[slideIndex-1].style.display = "block";
+	}
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 4000); // Change image every 4 seconds
+	}
+</script>
+
+</body>
+</html>
